@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--[if IE 8]>
+        <script src="js/forIE/html5shiv.min.js"></script>
+        <script src="js/forIE/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="todo-container">
+        <div class="todo-header">
+            <form class="form-todo" method="post">
+                <input type="text" class="todo-input" name="write hear" placeholder="Enter an Activaty" autocomplete="off">
+                <span class="click-input fa fa-plus "></span>
+            </form>
+        </div>
+
+        <div class="body-todo">
+            <ul class="ul-todo-list">
+                <li>
+                    read the book who name elquant javascript
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-backspace"></i>
+                </li>
+                <li>
+                    call my frind ahmed
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-backspace"></i>
+                </li>
+                <li>
+                    watch course from el-zero wep school
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-backspace"></i>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="active-todo">
+            <ul class="ul-active"></ul>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/nicescroll/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

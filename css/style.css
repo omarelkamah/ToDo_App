@@ -1,0 +1,180 @@
+/* Start Normalize in the css */
+* {
+    box-sizing: border-box;
+}
+body {background-color: #edf0f1; font-family: Arial, Helvetica, sans-serif;}
+/* End Normalize in the css */
+
+/* Start Header in the todo  */
+.todo-header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: 15px;
+    background-color: #25b99a;
+    z-index: 5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+}
+
+.todo-container .form-todo {position: relative;}
+
+.todo-container .form-todo input.todo-input {
+    background-color: rgba(255, 255, 255, 0.15);
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    float: left;
+    z-index: 1;
+    color: #fff;
+    font-weight: 400;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-indent: 15px;
+}
+
+.todo-container .form-todo input.todo-input::placeholder { color:  rgba(255, 255, 255, 0.75)}
+
+.todo-container .form-todo span {
+    position: absolute;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 50px;
+    float: right;
+    right: 0;
+    color: rgb(37, 185, 154);
+    font-weight: 600;
+    text-indent: 17px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+/* End Header in the todo  */
+
+/* Start Body of the ToDo list  */
+.body-todo {padding: 80px 0 0 0; padding-bottom: 40px}
+
+.body-todo .ul-todo-list {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.body-todo .ul-todo-list li {
+    width: 98%;
+    height: 50px;
+    padding: 15px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(44, 62, 80, 0.15);
+    color: #25b99a;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    position: relative;
+}
+
+.body-todo .ul-todo-list li .fa-check {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #25b99a;
+    line-height: 22px;
+    text-indent: 3px;
+    float: right;
+    margin-left: 15px;
+    margin-right: 20px;
+    color: #25b99a;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .2s ease-in-out
+}
+
+.body-todo .ul-todo-list li .fa-check.active,
+.body-todo .ul-todo-list li .fa-check:hover {
+    color: #edf0f1;
+    background-color: #25b99a;
+}
+
+.body-todo .ul-todo-list li .fa-backspace{    
+    float: right;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    padding-right: 35px;
+    border-right: 1px solid #25b99a;
+    color: #25b99a;
+    cursor: pointer;
+}
+/* End Body of the ToDo list  */
+
+/* Start End Buttons */
+.active-todo {padding: 20px 0 0 0}
+
+.active-todo .ul-active {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.active-todo .ul-active li {
+    width: 98%;
+    height: 50px;
+    padding: 15px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(44, 62, 80, 0.15);
+    color: #25b99a;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    position: relative;
+}
+
+.active-todo .ul-active li .fa-check {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #25b99a;
+    line-height: 22px;
+    text-indent: 3px;
+    float: right;
+    margin-left: 15px;
+    margin-right: 20px;
+    color: #25b99a;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .2s ease-in-out
+}
+
+.active-todo .ul-active li .fa-check.active,
+.active-todo .ul-active li .fa-check:hover {
+    color: #edf0f1;
+    background-color: #25b99a;
+}
+
+.active-todo .ul-active li .fa-backspace{    
+    float: right;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    padding-right: 35px;
+    border-right: 1px solid #25b99a;
+    color: #25b99a;
+    cursor: pointer;
+}
+/* End End Buttons */
+
+/* Start Style for hr  */
+hr {border: 1px solid #d8e5e0; width: 150px}
+/* End Style for hr  */
